@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        /* Optional: Menambahkan style custom */
+        .nav-pills {
+            margin-bottom: 20px;
+        }
+
+        .tab-content {
+            margin-top: 20px;
+        }
+        .card{
+            align-items: center;
+        }
+        img{
+            border-radius: 20px;
+        }
+        
+
+        /* Custom style to adjust the layout for mobile */
+        @media (max-width: 768px) {
+            .nav-pills {
+                flex-direction: column;
+            }
+
+            .nav-pills .nav-item {
+                width: 100%;
+                text-align: center;
+                margin-bottom: 10px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container mt-5">
+        <h1 class="text-center">My Portfolio</h1>
+
+        <!-- Horizontal menu for desktop view, vertical for mobile view -->
+        <ul class="nav nav-pills justify-content-center justify-content-md-start flex-md-row mt-4" id="pills-tab" role="tablist">
+            <li class="nav-item" role="presentation">
+                <button class="nav-link active" id="pills-photography-tab" data-bs-toggle="pill" data-bs-target="#pills-photography" type="button" role="tab" aria-controls="pills-photography" aria-selected="true">Photography</button>
+            </li>
+            <li class="nav-item" role="presentation">
+                <button class="nav-link" id="pills-3dmodeling-tab" data-bs-toggle="pill" data-bs-target="#pills-3dmodeling" type="button" role="tab" aria-controls="pills-3dmodeling" aria-selected="false">3D Modeling</button>
+            </li>
+            <li class="nav-item" role="presentation">
+                <button class="nav-link" id="pills-videography-tab" data-bs-toggle="pill" data-bs-target="#pills-videography" type="button" role="tab" aria-controls="pills-videography" aria-selected="false">Videography</button>
+            </li>
+            <li class="nav-item" role="presentation">
+                <button class="nav-link" id="pills-animation-tab" data-bs-toggle="pill" data-bs-target="#pills-animation" type="button" role="tab" aria-controls="pills-animation" aria-selected="false">Animation</button>
+            </li>
+        </ul>
+
+        <!-- Tab content -->
+        <div class="tab-content" id="pills-tabContent">
+            <!-- Photography Section -->
+            <div class="tab-pane fade show active" id="pills-photography" role="tabpanel" aria-labelledby="pills-photography-tab">
+                <div class="row">
+                    
+                    <div class="col-md-4">
+                        <div class="card mb-4">
+                            <img src="img/Caladium Flower.jpg" class="card-img-top" alt="Photography 2">
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="card mb-4">
+                            <img src="img/Fern Leaf.jpg" class="card-img-top" alt="Photography 3">
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="card mb-4">
+                            <img src="img/IMG_6827.jpg" class="card-img-top" alt="Photography 3">
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="card mb-4">
+                            <img src="img/Verdant Gaze.jpg" class="card-img-top" alt="Photography 1">
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 3D Modeling Section -->
+            <div class="tab-pane fade" id="pills-3dmodeling" role="tabpanel" aria-labelledby="pills-3dmodeling-tab">
+                <div class="row">
+                    <div class="col-md-4">
+                        <div class="card mb-4">
+                            <img src="img/3d/Agera in Canyon.png" class="card-img-top" alt="3D Model 1">
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="card mb-4">
+                            <img src="img/3d/jembatan3.png" class="card-img-top" alt="3D Model 2">
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="card mb-4">
+                            <img src="img/3d/jembatan8.png" class="card-img-top" alt="3D Model 3">
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Videography Section -->
+            <div class="tab-pane fade" id="pills-videography" role="tabpanel" aria-labelledby="pills-videography-tab">
+                <div class="row">
+                    <div class="col-md-6">
+                        <div class="card mb-4">
+                            <video class="card-img-top" controls>
+                                <source src="video/dong final.mp4" type="video/mp4">
+                                Your browser does not support the video tag.
+                            </video>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Animation Section -->
+            <div class="tab-pane fade" id="pills-animation" role="tabpanel" aria-labelledby="pills-animation-tab">
+                <div class="row">
+                    <div class="col-md-6">
+                        <div class="card mb-4">
+                            <video class="anim card-img-top" controls>
+                                <source src="video/animation/Snapinsta.app_video_An8NtDijm1GPmeoOpJLxdwW1Gz3uh4JiEbdEsw0bIGFIL9veN5NzTDMT5MtUegZ_OfTs44qFWYvl4F6t1g-93A.mp4" type="video/mp4">
+                                Your browser does not support the video tag.
+                            </video>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="card mb-4">
+                            <video class="anim card-img-top" controls>
+                                <source src="video/animation/Snapinsta.app_video_364AD0F37B5C639C4C6882D7A9321482_video_dashinit.mp4" type="video/mp4">
+                                Your browser does not support the video tag.
+                            </video>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="card mb-4">
+                            <video class="anim card-img-top" controls>
+                                <source src="video/animation/recruitment3.mp4" type="video/mp4">
+                                Your browser does not support the video tag.
+                            </video>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>
